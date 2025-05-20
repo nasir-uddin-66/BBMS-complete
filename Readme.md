@@ -37,6 +37,6 @@ Run the following command in **PowerShell** (to allow script execution temporari
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-
+```
 ```powershell
 npm start
