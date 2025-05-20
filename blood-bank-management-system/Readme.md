@@ -1,29 +1,42 @@
-# Blood Bank Management System
+# 🩸 Blood Bank Management System
 
-## Patient:
+A web-based Blood Bank Management System that streamlines blood requests and approvals between patients, donors, and administrators. Built with **HTML, CSS, Bootstrap, and vanilla JavaScript** for the frontend, and powered by **Node.js** and **MongoDB** on the backend.
 
-    Email: patient@gmail.com
-    Pass: 1234
+---
 
-## Donor:
+## 🚀 Features
 
-    Email: donor@gmail.com
-    Pass: 1234
+- Patients can request blood using an online form.
+- Admins can view, approve, or reject blood requests.
+- Admins can view, approve, or reject donation requests also.
+- Patients can track their request history.
+- Donors can register to donate blood.
+- Donors can also request blood from the blood bank when needed.
+- Clean UI using Bootstrap.
 
-## Admin:
+---
 
-    Email: admin@gmail.com
-    Username: admin
-    Pass: 1234
+## 🛠 Tech Stack
 
-## http://localhost:5000/api/users/register (post)
-## http://localhost:5000/api/users/login (post)
-## http://localhost:5000/api/users (get) {to get all users}
+### Frontend
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript (ES6)
 
-## http://localhost:5000/api/requests (post) {create donor/patient request}
-## http://localhost:5000/api/requests (get) {get all donor/patient requests}
+### Backend
+- Node.js
+- Express.js
+- MongoDB (via Mongoose)
 
-// -->request_controller {if any change needed}
+---
 
-## http://localhost:5000/api/donors (post) {create donor}
-## http://localhost:5000/api/donors (get) {get all donor}
+## 🔌 To connect with backend ->
+
+Run the following command in **PowerShell** (to allow script execution temporarily):
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+```powershell
+npm start

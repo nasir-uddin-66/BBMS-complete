@@ -54,7 +54,7 @@
               >Dashboard</a
             >
           </li>
-           <li class="nav-item p-2 border-bottom border-secondary">
+          <li class="nav-item p-2 border-bottom border-secondary">
             <a class="nav-link" href="d_profile.html">Profile</a>
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
@@ -62,7 +62,9 @@
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="d_donation_history.html">Donation History</a>
+            <a class="nav-link" href="d_donation_history.html"
+              >Donation History</a
+            >
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
@@ -80,7 +82,6 @@
       </div>
       <!-- sidebar end -->
 
-      
       <!-- main content s  -->
       <div class="main-content d-flex">
         <!-- show user info s -->
@@ -117,7 +118,6 @@
               Phone:
               <p id="d-profile-phone" class="d-inline"></p>
             </h5>
-
           </div>
           <button id="dInfoUpdate" class="btn btn-outline-primary w-75 mx-auto">
             Update Information <i class="fa-solid fa-pen-to-square"></i>
@@ -127,7 +127,7 @@
 
         <!-- update user info s -->
         <div
-          class="profile-box2 bg-white w-50 px-5 py-1 my-3 text-center d-flex flex-column justify-content-around border-50 rounded"
+          class="profile-box2 bg-white w-50 px-5 py-1 mb-5 text-center d-flex flex-column justify-content-around border-50 rounded"
           id="profile-box2"
         >
           <i class="fa-regular fa-circle-user mt-1 fs-1 text-primary"></i>
@@ -150,33 +150,40 @@
               placeholder="Enter username"
               required
             />
-            <label for="dUpdateAge" class="form-label mt-2">Age:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="dUpdateAge"
-              placeholder="Enter age"
-              required
-            />
-            <div class="form-group">
-              <label for="dUpdateBloodGrp" class="form-label mt-2"
-                >Blood Group:</label
-              >
-              <select class="form-select" id="dUpdateBloodGrp" required>
-                <option disabled selected>Enter Blood Group</option>
-                <option>A+</option>
-                <option>A-</option>
-                <option>B+</option>
-                <option>B-</option>
-                <option>AB+</option>
-                <option>O+</option>
-                <option>O-</option>
-              </select>
+
+            <div class="d-flex">
+              <div>
+                <label for="dUpdateAge" class="form-label mt-2">Age:</label>
+                <input
+                  type="number"
+                  class="form-control w-75"
+                  id="dUpdateAge"
+                  placeholder="Enter age"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="dUpdateBloodGrp" class="form-label mt-2"
+                  >Blood Group:</label
+                >
+                <select class="form-select" id="dUpdateBloodGrp" required>
+                  <option disabled selected>Enter Blood Group</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>AB+</option>
+                  <option>O+</option>
+                  <option>O-</option>
+                </select>
+              </div>
             </div>
 
             <div class="d-flex justify-content-center gap-2">
               <div>
-                <label for="dUpdateAddress" class="form-label mt-2">Address:</label>
+                <label for="dUpdateAddress" class="form-label mt-2"
+                  >Address:</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -186,9 +193,7 @@
                 />
               </div>
               <div class="form-group">
-                <label for="dUpdatePhone" class="form-label mt-2"
-                  >Phone:</label
-                >
+                <label for="dUpdatePhone" class="form-label mt-2">Phone:</label>
                 <input
                   type="number"
                   class="form-control"
@@ -200,15 +205,14 @@
             </div>
 
             <div class="d-flex gap-3 mt-3 mb-2">
-            <button class="cancelBtn btn btn-outline-primary w-50 mx-auto">
-              Cancel <i class="fa-regular fa-circle-xmark"></i>
-            </button>
-            <button type="submit" class="btn btn-primary w-50 mx-auto">
-              Update <i class="fa-regular fa-square-check"></i>
-            </button>
-          </div>
+              <button class="cancelBtn btn btn-outline-primary w-50 mx-auto">
+                Cancel <i class="fa-regular fa-circle-xmark"></i>
+              </button>
+              <button type="submit" class="btn btn-primary w-50 mx-auto">
+                Update <i class="fa-regular fa-square-check"></i>
+              </button>
+            </div>
           </form>
-          
         </div>
         <!-- update user info s -->
       </div>
@@ -223,7 +227,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap cdn e-->
-     <script src="../js/donor/d_logout.js"></script>
+    <script src="../js/donor/d_logout.js"></script>
     <script src="../js/donor/d_profile.js"></script>
   </body>
 </html>
