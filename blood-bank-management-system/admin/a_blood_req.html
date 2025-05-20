@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="/assets/logo.png" />
+    <title>Quantum Blood Lab - Blood Requests</title>
+  </head>
+  <body class="overflow-hidden">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
+      <div class="container-fluid ps-5 pe-5 nav_container">
+        <a class="navbar-brand ms-5" href="#" id="aWelcome">
+          Quantum Blood Lab <i class="fa-solid fa-droplet"></i>
+        </a>
+        <button id="logoutBtn" class="logout-button">
+          Logout <span><i class="fa-solid fa-right-from-bracket"></i></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="dashboardContainer d-flex">
+      <div class="sidebar bg-dark text-white text-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item p-2 border-bottom border-secondary active-li">
+            <a class="nav-link" href="a_dashboard.html" aria-current="page">Dashboard</a>
+          </li>
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="a_blood_req.html">Blood Requests</a>
+          </li>
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="a_donation_req.html">Donation Requests</a>
+          </li>
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="a_manage_user.html">Manage User</a>
+          </li>
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="a_bld_req_hisory.html">Blood Requests History</a>
+          </li>
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="a_don_history.html">Blood Donation History</a>
+          </li>
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="a_emergency.html">Emergency Requests</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-content px-4 py-3">
+        <h4 class="mb-4 text-secondary">Requests for Blood :</h4>
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Blood Group</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Last Request</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/admin/a_logout.js"></script>
+    <script src="../js/admin/a_request.js"></script>
+  </body>
+</html>

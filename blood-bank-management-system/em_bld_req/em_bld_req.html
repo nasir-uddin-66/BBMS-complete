@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/assets/logo.png" />
+    <title>Quantum Blood Lab</title>
+  </head>
+  <body style="overflow: hidden">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
+      <div class="container-fluid ps-5 pe-5 nav_container">
+        <a class="navbar-brand ms-5" href="#"
+          >Quantum Blood Lab <i class="fa-solid fa-droplet"></i
+        ></a>
+
+        <div class="text-white">
+          <a href="/index.html" class="badge btn btn-outline-light p-2"
+            >Back To Home Page</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!--  dashboard-container s-->
+    <div class="dashboardContainer d-flex">
+      <!-- main content s -->
+      <div class="main-content">
+        <!-- blood request form s -->
+        <div class="bg-white p-5 m-auto border-50 rounded" style="width: 40rem">
+          <h5 class="text-center mb-5"><i>Emergency Blood Request Form </i></h5>
+
+          <form id="ebr-form">
+            <div class="d-flex justify-content-around">
+              <div>
+                <label for="ebr-fName" class="form-label">First Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="ebr-fName"
+                  id="ebr-fName"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="ebr-lName" class="form-label">Last Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="ebr-lName"
+                  id="ebr-lName"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-around mt-3">
+              <div>
+                <label for="ebr-age" class="form-label">Age:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name="ebr-age"
+                  id="ebr-age"
+                  required
+                />
+              </div>
+
+              <div>
+                <p>Gender:</p>
+
+                <div
+                  class="form-control px-2"
+                  style="width: 13.5rem; margin-top: -7px"
+                >
+                  <input
+                    type="radio"
+                    name="ebr-gender"
+                    id="ebr-male"
+                    class="ms-4"
+                    value="male"
+                    required
+                  />
+                  <label for="ebr-male">Male</label>
+
+                  <input
+                    type="radio"
+                    name="ebr-gender"
+                    id="ebr-female"
+                    value="female"
+                    class="ms-4"
+                    required
+                  />
+                  <label for="ebr-female">Female</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-around mt-3">
+              <div>
+                <label for="ebr-email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="ebr-email"
+                  id="ebr-email"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="ebr-bloodGrp" class="form-label"
+                  >Blood Group:</label
+                >
+                <select
+                  class="form-select"
+                  id="ebr-bloodGrp"
+                  style="width: 13.5rem"
+                >
+                  <option disabled selected>Enter Blood Group</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                  <option>O+</option>
+                  <option>O-</option>
+                </select>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-around mt-3 gap-4"
+              style="padding: 0 1.75rem"
+            >
+              <div class="w-75">
+                <label for="ebr-reason" class="form-label"
+                  >Reason of Blood Request:</label
+                >
+                <input
+                  type="text"
+                  name="ebr-reason"
+                  id="ebr-reason"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="ebr-quantity" class="form-label"
+                  >Quantity (in ml):</label
+                >
+                <input
+                  type="number"
+                  name="ebr-quantity"
+                  id="ebr-quantity"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-around mt-3">
+              <div>
+                <label for="ebr-address" class="form-label">Address:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="ebr-address"
+                  id="ebr-address"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="ebr-phone" class="form-label">Phone:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="ebr-phone"
+                  id="ebr-phone"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mt-3" style="padding: 0 1.75rem">
+              <label for="ebr-description" class="form-label"
+                >Description:</label
+              >
+              <input
+                type="text"
+                name="ebr-description"
+                id="ebr-description"
+                placeholder="optional"
+                class="form-control"
+              />
+            </div>
+
+            <div class="d-flex justify-content-center my-3">
+              <button
+                class="ebr-submit-btn btn btn-primary w-25 mt-3"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- blood request form e -->
+      </div>
+      <!-- main content e  -->
+    </div>
+    <!--  dashboard-container e-->
+
+    <!-- bootstrap cdn s-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap cdn e-->
+    <script src="/em_bld_req/em_bld_req.js"></script>
+  </body>
+</html>
